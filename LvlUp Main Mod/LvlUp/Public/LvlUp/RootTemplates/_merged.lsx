@@ -1,37 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <save>
-	<version major="0" minor="0" revision="0" build="602" />
+	<version major="4" minor="0" revision="6" build="5" />
 	<region id="Templates">
 		<node id="Templates">
-			<children>
-				<node id="GameObjects">
-					<attribute id="BloodSurfaceType" type="22" value="SurfaceNone" />
-					<attribute id="CharacterVisualResourceID" type="22" value="241f9195-5b43-d48c-4690-5e5d8b2b475f" />
-					<attribute id="DisplayName" type="28" handle="hbd4e12bcg66d1g4342g9209g17f5036abe56" version="1" />
-					<attribute id="Flag" type="4" value="0" />
-					<attribute id="Icon" type="22" value="241f9195-5b43-d48c-4690-5e5d8b2b475f-_(Icon_Zombie)" />
-					<attribute id="LevelName" type="22" value="" />
-					<attribute id="MapKey" type="22" value="17684056-f30e-4df3-92b0-18f5e9233641" />
-					<attribute id="Name" type="23" value="Zombie_Mod" />
-					<attribute id="ParentTemplateId" type="22" value="5b2827cb-1cf9-4cd5-9b58-0f7eb4657f0c" />
-					<attribute id="Title" type="28" handle="hc4ad5b04g8caeg4d23gaac6g1a1f00db8e57" version="1" />
-					<attribute id="Type" type="22" value="character" />
-					<attribute id="_OriginalFileVersion_" type="32" value="144115188075855919" />
+			<children>	
+
+					<node id="GameObjects">
+					<attribute id="Acceleration" type="float" value="35" />
+					<attribute id="BeamFX" type="FixedString" value="VFX_Spells_Cast_Damage_Fire_ProjectileMultiple_Scorching_Ray_Beam_01" />
+					<attribute id="CameraOffset" type="fvec3" value="0 0 0" />
+					<attribute id="CastBone" type="FixedString" value="Dummy_CastFX" />
+					<attribute id="CastShadow" type="bool" value="False" />
+					<attribute id="DetachBeam" type="bool" value="True" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="GroundImpactFX" type="LSString" value="VFX_Projectiles_Vial_Explosion_Runepowder_Impact_01" />
+					<attribute id="GroupID" type="uint32" value="0" />
+					<attribute id="HasGameplayValue" type="bool" value="False" />
+					<attribute id="ImpactFX" type="FixedString" value="VFX_Projectiles_Vial_Explosion_Runepowder_Impact_01" />
+					<attribute id="InitialSpeed" type="float" value="100" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LifeTime" type="float" value="20" />
+					<attribute id="MapKey" type="FixedString" value="813bcb90-6202-4486-9a82-5ca6bf924d98" />
+					<attribute id="Name" type="LSString" value="" />
+					<attribute id="ParentTemplateId" type="FixedString" value="" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="" />
+					<attribute id="PreviewPathImpactFX" type="FixedString" value="VFX_UI_DestinationBeam_Projectile_01" />
+					<attribute id="PreviewPathMaterial" type="FixedString" value="312a1494-a0e2-c215-cf51-bda58a6b2341" />
+					<attribute id="Speed" type="float" value="200" />
+					<attribute id="Scale" type="float" value="2" />
+					<attribute id="Type" type="FixedString" value="projectile" />
+					<attribute id="VisualTemplate" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855919" />
 					<children>
-						<node id="GameMaster" />
-						<node id="LocomotionParams" />
-						<node id="TradeTreasures">
+						<node id="Bounds">
 							<children>
-								<node id="TreasureItem">
-									<attribute id="Object" type="22" value="Empty" />
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0" />
+									<attribute id="Max" type="fvec3" value="0 0 0" />
+									<attribute id="Min" type="fvec3" value="0 0 0" />
+									<attribute id="Radius" type="float" value="0" />
+									<attribute id="Shape" type="uint8" value="0" />
+									<attribute id="Type" type="uint8" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0" />
+									<attribute id="Max" type="fvec3" value="0 0 0" />
+									<attribute id="Min" type="fvec3" value="0 0 0" />
+									<attribute id="Radius" type="float" value="0" />
+									<attribute id="Shape" type="uint8" value="0" />
+									<attribute id="Type" type="uint8" value="2" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="0" />
+									<attribute id="Max" type="fvec3" value="0 0 0" />
+									<attribute id="Min" type="fvec3" value="0 0 0" />
+									<attribute id="Radius" type="float" value="0" />
+									<attribute id="Shape" type="uint8" value="0" />
+									<attribute id="Type" type="uint8" value="0" />
 								</node>
 							</children>
 						</node>
-						<node id="Treasures">
+						<node id="FadeChildren" />
+						<node id="GameMaster" />
+						<node id="LayerList">
 							<children>
-								<node id="TreasureItem">
-									<attribute id="Object" type="22" value="Empty" />
-								</node>
+								<node id="Layers" />
 							</children>
 						</node>
 					</children>
