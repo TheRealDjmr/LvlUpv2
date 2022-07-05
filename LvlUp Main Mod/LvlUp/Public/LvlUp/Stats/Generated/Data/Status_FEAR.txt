@@ -1,0 +1,26 @@
+
+// Ranger and Druid Spells //
+
+new entry "WRATHFUL_SMITE"
+type "StatusData"
+data "StatusType" "FEAR"
+data "DisplayName" "Frightened (Wrathful Smite)"
+data "Description" "You have disadvantage on all ability checks and attack rolls while the source of your fear is within Line of Sight"
+data "Icon" "Status_Frightened"
+data "FormatColor" "White"
+data "StatusEffect" "VFX_Status_Control_01"
+data "StackId" "Stack_Fear"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" "not HasStatus('WRATHFUL_SMITE_DURATION',context.Source)"
+data "Boosts" "IF(CanSeeStatusSource()):Disadvantage(AllAbilities);IF(CanSeeStatusSource()):Disadvantage(AttackRoll);UnlockSpell(Shout_RemoveWrathfulSmite)"
+data "OnRemoveFunctors" "IF(HasStatus('WRATHFUL_SMITE_DURATION',context.Source)):ApplyStatus(WRATHFUL_SMITE_CHECK,100,0)"
+data "StatusPropertyFlags" "InitiateCombat"
+data "StatusGroups" "SG_Frightened;SG_Condition"
+
+new entry "WRATHFUL_SMITE_CHECK"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "Wrathful Smite saving throw"
+data "Description" "Rolls a Wisdom saving throw against the spell save DC, when failed Frightened is re-applied"
+data "OnRemoveFunctors" "IF(not SavingThrow(Ability.Wisdom, SourceSpellDC())):ApplyStatus(WRATHFUL_SMITE,100,10)"
+data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator"
