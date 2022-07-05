@@ -1,11 +1,1 @@
-{
-    "mods": [
-		{
-			"modName": "LvlUp",
-			"UUID": "6cdf7b52-6dd7-4d2f-88b6-745e7199ecef",
-			"folderName": "LvlUp",
-			"version": "1.53",
-			"MD5": ""
-		}
-    ]
-}
+{"Mods":[{"Author":"Oiff","Name":"LvlUp","Folder":"LvlUp","Version":null,"Description":"Lvl up to 20 and get new spells","UUID":"6cdf7b52-6dd7-4d2f-88b6-745e7199ecef","Created":"2022-03-08T22:10:34.7611951-06:00","Dependencies":[],"Group":"9f81fd7c-d803-4cdf-917a-1bf4d37ce140"}],"MD5":"eb4346cf1f366f7fb8e9b0d38f33cf1d"}
