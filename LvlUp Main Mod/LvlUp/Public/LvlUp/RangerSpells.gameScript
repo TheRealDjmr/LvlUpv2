@@ -1,0 +1,163 @@
+EVENTS
+
+EVENT RangerFirstRoundTurnidentifier
+VARS
+	CHARACTER:_Character
+ON
+		OnTurn(_Character)
+ACTIONS
+	IF "c1&c2&!c3"
+		CharacterIsPlayer(_Character)
+		IsTagged(_Character, "RANGER")
+		CharacterHasStatus(_Character, "DREADAMBUSHER_COMBATISNTOVER")
+	THEN
+		CharacterApplyStatus(_Character, "DREADAMBUSHER_FIRSTROUND_TURNIDENTIFER" , 1)
+	ENDIF
+	
+EVENT WildfireSpiritBonuscalculation1
+VARS
+	CHARACTER:_Character
+	CHARACTER:_Source
+	FLOAT:_Wis
+ON
+	OnCharacterStatusApplied(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS")
+ACTIONS
+IF	"c1&c2&c3"
+	CharacterGetStatusSourceCharacter(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS", _Source)
+	CharacterGetStat(_Wis,_Source,Wisdom)
+	IsLessThen(_Wis,10)
+THEN
+	CharacterApplyStatus(_Character, "WILDFIRESPIRIT_ROLLBONUSMINUS3", -1)
+ENDIF
+
+EVENT WildfireSpiritBonuscalculation2
+VARS
+	CHARACTER:_Character
+	CHARACTER:_Source
+	FLOAT:_Wis
+ON
+	OnCharacterStatusApplied(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS")
+ACTIONS
+IF	"c1&c2&(c3|c4)"
+	CharacterGetStatusSourceCharacter(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS", _Source)
+	CharacterGetStat(_Wis,_Source,Wisdom)
+	IsEqual(_Wis,10)
+	IsEqual(_Wis,11)
+THEN
+	CharacterApplyStatus(_Character, "WILDFIRESPIRIT_ROLLBONUSMINUS2", -1)
+ENDIF
+
+EVENT WildfireSpiritBonuscalculation3
+VARS
+	CHARACTER:_Character
+	CHARACTER:_Source
+	FLOAT:_Wis
+ON
+	OnCharacterStatusApplied(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS")
+ACTIONS
+IF	"c1&c2&(c3|c4)"
+	CharacterGetStatusSourceCharacter(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS", _Source)
+	CharacterGetStat(_Wis,_Source,Wisdom)
+	IsEqual(_Wis,12)
+	IsEqual(_Wis,13)
+THEN
+	CharacterApplyStatus(_Character, "WILDFIRESPIRIT_ROLLBONUSMINUS1", -1)
+ENDIF
+
+EVENT WildfireSpiritBonuscalculation4
+VARS
+	CHARACTER:_Character
+	CHARACTER:_Source
+	FLOAT:_Wis
+ON
+	OnCharacterStatusApplied(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS")
+ACTIONS
+IF	"c1&c2&(c3|c4)"
+	CharacterGetStatusSourceCharacter(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS", _Source)
+	CharacterGetStat(_Wis,_Source,Wisdom)
+	IsEqual(_Wis,16)
+	IsEqual(_Wis,17)
+THEN
+	CharacterApplyStatus(_Character, "WILDFIRESPIRIT_ROLLBONUSPLUS1", -1)
+ENDIF
+
+EVENT WildfireSpiritBonuscalculation5
+VARS
+	CHARACTER:_Character
+	CHARACTER:_Source
+	FLOAT:_Wis
+ON
+	OnCharacterStatusApplied(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS")
+ACTIONS
+IF	"c1&c2&(c3|c4)"
+	CharacterGetStatusSourceCharacter(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS", _Source)
+	CharacterGetStat(_Wis,_Source,Wisdom)
+	IsEqual(_Wis,18)
+	IsEqual(_Wis,19)
+THEN
+	CharacterApplyStatus(_Character, "WILDFIRESPIRIT_ROLLBONUSPLUS2", -1)
+ENDIF
+
+EVENT WildfireSpiritBonuscalculation6
+VARS
+	CHARACTER:_Character
+	CHARACTER:_Source
+	FLOAT:_Wis
+ON
+	OnCharacterStatusApplied(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS")
+ACTIONS
+IF	"c1&c2&c3"
+	CharacterGetStatusSourceCharacter(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS", _Source)
+	CharacterGetStat(_Wis,_Source,Wisdom)
+	IsEqual(_Wis,20)
+THEN
+	CharacterApplyStatus(_Character, "WILDFIRESPIRIT_ROLLBONUSPLUS3", -1)
+ENDIF
+
+EVENT WildfireSpiritHPcalculation1
+VARS
+	CHARACTER:_Character
+	CHARACTER:_Source
+	FLOAT:_Level
+ON
+	OnCharacterStatusApplied(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS")
+ACTIONS
+IF	"c1&c2&c3"
+	CharacterGetStatusSourceCharacter(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS", _Source)
+	CharacterGetStat(_Level,_Source,Level)
+	IsEqual(_Level,2)
+THEN
+	CharacterApplyStatus(_Character, "WILDFIRESPIRIT_HPBONUS1", -1)
+ENDIF
+
+EVENT WildfireSpiritHPcalculation2
+VARS
+	CHARACTER:_Character
+	CHARACTER:_Source
+	FLOAT:_Level
+ON
+	OnCharacterStatusApplied(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS")
+ACTIONS
+IF	"c1&c2&c3"
+	CharacterGetStatusSourceCharacter(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS", _Source)
+	CharacterGetStat(_Level,_Source,Level)
+	IsEqual(_Level,3)
+THEN
+	CharacterApplyStatus(_Character, "WILDFIRESPIRIT_HPBONUS2", -1)
+ENDIF
+
+EVENT WildfireSpiritHPcalculation3
+VARS
+	CHARACTER:_Character
+	CHARACTER:_Source
+	FLOAT:_Level
+ON
+	OnCharacterStatusApplied(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS")
+ACTIONS
+IF	"c1&c2&c3"
+	CharacterGetStatusSourceCharacter(_Character, "WILDFIRESPIRIT_SUMMONHOSTSTATUS", _Source)
+	CharacterGetStat(_Level,_Source,Level)
+	IsEqual(_Level,4)
+THEN
+	CharacterApplyStatus(_Character, "WILDFIRESPIRIT_HPBONUS3", -1)
+ENDIF
