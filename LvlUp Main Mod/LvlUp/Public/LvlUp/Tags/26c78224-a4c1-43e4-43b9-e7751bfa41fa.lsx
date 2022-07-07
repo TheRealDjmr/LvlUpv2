@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="0" build="55"/>
+    <region id="Tags">
+        <node id="root">
+            <attribute id="Description" type="LSString" value="Summon tag because this is mislabelled for some reason"/>
+            <attribute id="DisplayDescription" type="TranslatedString" value="SUMMON tooltip" handle="291d3ade3dc44cdf9199deeeeeeeeeeeeeeee"/>
+            <attribute id="DisplayName" type="TranslatedString" value="Summon" handle="167b87d399784495ac81deeeeeeeeeeeeeeee"/>
+            <attribute id="Icon" type="FixedString" value=""/>
+            <attribute id="Name" type="FixedString" value="SUMMONED"/>
+            <attribute id="UUID" type="guid" value="26c78224-a4c1-43e4-43b9-e7751bfa41fa"/>
+            <children>
+                <node id="Categories">
+                    <children>
+                        <node id="Category">
+                            <attribute id="Name" type="LSString" value="Code"/>
+                        </node>
+                        <node id="Category">
+                            <attribute id="Name" type="LSString" value="Dialog"/>
+                        </node>
+                    </children>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

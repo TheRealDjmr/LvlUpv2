@@ -1,70 +1,180 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <save>
-	<version major="4" minor="0" revision="6" build="5" />
+	<version major="0" minor="0" revision="0" build="602" />
 	<region id="Templates">
 		<node id="Templates">
-			<children>	
-
-					<node id="GameObjects">
-					<attribute id="Acceleration" type="float" value="35" />
-					<attribute id="BeamFX" type="FixedString" value="VFX_Spells_Cast_Damage_Fire_ProjectileMultiple_Scorching_Ray_Beam_01" />
-					<attribute id="CameraOffset" type="fvec3" value="0 0 0" />
-					<attribute id="CastBone" type="FixedString" value="Dummy_CastFX" />
-					<attribute id="CastShadow" type="bool" value="False" />
-					<attribute id="DetachBeam" type="bool" value="True" />
-					<attribute id="Flag" type="int32" value="0" />
-					<attribute id="GroundImpactFX" type="LSString" value="VFX_Projectiles_Vial_Explosion_Runepowder_Impact_01" />
-					<attribute id="GroupID" type="uint32" value="0" />
-					<attribute id="HasGameplayValue" type="bool" value="False" />
-					<attribute id="ImpactFX" type="FixedString" value="VFX_Projectiles_Vial_Explosion_Runepowder_Impact_01" />
-					<attribute id="InitialSpeed" type="float" value="100" />
-					<attribute id="LevelName" type="FixedString" value="" />
-					<attribute id="LifeTime" type="float" value="20" />
-					<attribute id="MapKey" type="FixedString" value="813bcb90-6202-4486-9a82-5ca6bf924d98" />
-					<attribute id="Name" type="LSString" value="" />
-					<attribute id="ParentTemplateId" type="FixedString" value="" />
-					<attribute id="PhysicsTemplate" type="FixedString" value="" />
-					<attribute id="PreviewPathImpactFX" type="FixedString" value="VFX_UI_DestinationBeam_Projectile_01" />
-					<attribute id="PreviewPathMaterial" type="FixedString" value="312a1494-a0e2-c215-cf51-bda58a6b2341" />
-					<attribute id="Speed" type="float" value="200" />
-					<attribute id="Scale" type="float" value="2" />
-					<attribute id="Type" type="FixedString" value="projectile" />
-					<attribute id="VisualTemplate" type="FixedString" value="" />
-					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855919" />
+			<children>
+				<node id="GameObjects">
+					<attribute id="BloodSurfaceType" type="22" value="SurfaceNone" />
+					<attribute id="DisplayName" type="28" handle="cb3b43fe7f894f089920deeeeeeeeeeeeeeee" version="1" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="IsLootable" type="19" value="False" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="5f6c0f61-f05d-471a-b9a0-deeeeeeeeeee" />
+					<attribute id="Name" type="23" value="" />
+					<attribute id="ParentTemplateId" type="22" value="41da0eff-b533-43cc-a014-218f7d23fa11" />
+					<attribute id="ReadinessFlags" type="5" value="12" />
+					<attribute id="Stats" type="22" value="Wildfire_Spirit" />
+					<attribute id="Type" type="22" value="character" />
+					<attribute id="VocalAlertResourceID" type="22" value="715a5a93-9237-ded1-19c2-7767974c9eeb" />
+					<attribute id="VocalAngryResourceID" type="22" value="bb91834b-4e20-7435-ff87-2c9f0f29b9b8" />
+					<attribute id="VocalBoredResourceID" type="22" value="7d16822d-9538-4056-eada-b3ac15cf2a28" />
+					<attribute id="VocalExhaustedResourceID" type="22" value="715a5a93-9237-ded1-19c2-7767974c9eeb" />
+					<attribute id="VocalRelaxedResourceID" type="22" value="7ad56dd5-0b7d-2e07-c60e-2ed0a55ad340" />
+					<attribute id="_OriginalFileVersion_" type="32" value="144115196665790675" />
 					<children>
-						<node id="Bounds">
+						<node id="GameMaster" />
+						<node id="LocomotionParams" />
+						<node id="OnDeathActions" />
+						<node id="PickingPhysics">
 							<children>
-								<node id="Bound">
-									<attribute id="Height" type="float" value="0" />
-									<attribute id="Max" type="fvec3" value="0 0 0" />
-									<attribute id="Min" type="fvec3" value="0 0 0" />
-									<attribute id="Radius" type="float" value="0" />
-									<attribute id="Shape" type="uint8" value="0" />
-									<attribute id="Type" type="uint8" value="1" />
+								<node id="PickingPhysicsTemplates">
+									<attribute id="MapKey" type="22" value="CharacterSittingPicking" />
+									<attribute id="MapValue" type="22" value="" />
 								</node>
-								<node id="Bound">
-									<attribute id="Height" type="float" value="0" />
-									<attribute id="Max" type="fvec3" value="0 0 0" />
-									<attribute id="Min" type="fvec3" value="0 0 0" />
-									<attribute id="Radius" type="float" value="0" />
-									<attribute id="Shape" type="uint8" value="0" />
-									<attribute id="Type" type="uint8" value="2" />
+								<node id="PickingPhysicsTemplates">
+									<attribute id="MapKey" type="22" value="CharacterLyingPicking" />
+									<attribute id="MapValue" type="22" value="" />
 								</node>
-								<node id="Bound">
-									<attribute id="Height" type="float" value="0" />
-									<attribute id="Max" type="fvec3" value="0 0 0" />
-									<attribute id="Min" type="fvec3" value="0 0 0" />
-									<attribute id="Radius" type="float" value="0" />
-									<attribute id="Shape" type="uint8" value="0" />
-									<attribute id="Type" type="uint8" value="0" />
+								<node id="PickingPhysicsTemplates">
+									<attribute id="MapKey" type="22" value="CharacterDeadPicking" />
+									<attribute id="MapValue" type="22" value="" />
 								</node>
 							</children>
 						</node>
-						<node id="FadeChildren" />
-						<node id="GameMaster" />
-						<node id="LayerList">
+						<node id="SkillList">
 							<children>
-								<node id="Layers" />
+								<node id="Skill">
+									<attribute id="AIFlags" type="3" value="0" />
+									<attribute id="CasualExplorer" type="19" value="True" />
+									<attribute id="Classic" type="19" value="True" />
+									<attribute id="FallbackStartRound" type="4" value="-1" />
+									<attribute id="HonorHardcore" type="19" value="True" />
+									<attribute id="LearningStrategy" type="1" value="0" />
+									<attribute id="MinimumImpact" type="4" value="0" />
+									<attribute id="OnlyCastOnSelf" type="19" value="False" />
+									<attribute id="ScoreModifier" type="6" value="1" />
+									<attribute id="Skill" type="22" value="Shout_Dodge_WildfireSpirit" />
+									<attribute id="SpellCastingAbility" type="1" value="0" />
+									<attribute id="StartRound" type="4" value="0" />
+									<attribute id="TacticianHardcore" type="19" value="True" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="3" value="0" />
+									<attribute id="CasualExplorer" type="19" value="True" />
+									<attribute id="Classic" type="19" value="True" />
+									<attribute id="FallbackStartRound" type="4" value="-1" />
+									<attribute id="HonorHardcore" type="19" value="True" />
+									<attribute id="LearningStrategy" type="1" value="0" />
+									<attribute id="MinimumImpact" type="4" value="0" />
+									<attribute id="OnlyCastOnSelf" type="19" value="False" />
+									<attribute id="ScoreModifier" type="6" value="1" />
+									<attribute id="Skill" type="22" value="Target_FieryTeleportation" />
+									<attribute id="SpellCastingAbility" type="1" value="0" />
+									<attribute id="StartRound" type="4" value="0" />
+									<attribute id="TacticianHardcore" type="19" value="True" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="3" value="0" />
+									<attribute id="CasualExplorer" type="19" value="True" />
+									<attribute id="Classic" type="19" value="True" />
+									<attribute id="FallbackStartRound" type="4" value="-1" />
+									<attribute id="HonorHardcore" type="19" value="True" />
+									<attribute id="LearningStrategy" type="1" value="0" />
+									<attribute id="MinimumImpact" type="4" value="0" />
+									<attribute id="OnlyCastOnSelf" type="19" value="False" />
+									<attribute id="ScoreModifier" type="6" value="1" />
+									<attribute id="Skill" type="22" value="Projectile_FlameSeed" />
+									<attribute id="SpellCastingAbility" type="1" value="5" />
+									<attribute id="StartRound" type="4" value="0" />
+									<attribute id="TacticianHardcore" type="19" value="True" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="3" value="0" />
+									<attribute id="CasualExplorer" type="19" value="True" />
+									<attribute id="Classic" type="19" value="True" />
+									<attribute id="FallbackStartRound" type="4" value="-1" />
+									<attribute id="HonorHardcore" type="19" value="True" />
+									<attribute id="LearningStrategy" type="1" value="0" />
+									<attribute id="MinimumImpact" type="4" value="0" />
+									<attribute id="OnlyCastOnSelf" type="19" value="False" />
+									<attribute id="ScoreModifier" type="6" value="1" />
+									<attribute id="Skill" type="22" value="Projectile_Jump" />
+									<attribute id="SpellCastingAbility" type="1" value="0" />
+									<attribute id="StartRound" type="4" value="0" />
+									<attribute id="TacticianHardcore" type="19" value="True" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="31" value="26c78224-a4c1-43e4-43b9-e7751bfa41fa" />
+								</node>
 							</children>
 						</node>
 					</children>
