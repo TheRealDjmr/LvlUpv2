@@ -19,6 +19,20 @@
                     <attribute id="UUID" type="guid" value="24cbc154-7b9d-46dd-bc7b-0516aceaca88"/>
                     <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
                 </node>
+		<node id="ActionResourceDefinition">
+                    <attribute id="Description" type="FixedString" value="A font of energy that offers respite from injuries"/>
+                    <attribute id="DiceType" type="uint32" value="6"/>
+                    <attribute id="DisplayName" type="FixedString" value="Fey Energy"/>
+                    <attribute id="Error" type="FixedString" value="ActionResourceDefinitions_New_Stat_0_Error"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="FeyEnergy"/>
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="2ce32c06-2ab5-4d37-bcac-deeeeeeeeeee"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
             </children>
         </node>
     </region>
