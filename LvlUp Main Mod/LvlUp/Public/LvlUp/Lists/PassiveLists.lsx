@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="0" build="48"/>
+    <region id="PassiveLists">
+        <node id="root">
+            <children>
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="FavoredEnemy_BountyHunter,FavoredEnemy_CloudChaser,FavoredEnemy_DragonSlayer,FavoredEnemy_FavoredFoe,FavoredEnemy_KeeperOfTheVeil,FavoredEnemy_MageBreaker,FavoredEnemy_RangerKnight,FavoredEnemy_SanctifiedStalker"/>
+                    <attribute id="UUID" type="guid" value="d0f13dda-eb37-41f5-aea5-2683f0229e2e"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
