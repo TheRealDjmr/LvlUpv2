@@ -132,7 +132,7 @@
                     <attribute id="Spells" type="LSString" value="Target_Blight"/>
                     <attribute id="UUID" type="guid" value="b057f3b2-4a22-4a36-b31b-0c5c833f1871"/>
                 </node>
-                <node id="SpellList"> Death Cleric Divine Strike (Cleric Lvl 8)
+                <node id="SpellList"> Death Cleric Divine Strike (Cleric Lvl 8) INCORRECT 
                     <attribute id="Spells" type="LSString" value="Target_DivineStrike;Projectile_DivineStrikeRanged"/>
                     <attribute id="UUID" type="guid" value="a02c1b8c-5c70-4aa7-b97f-3d0fc84132a4"/>
                 </node>
@@ -171,6 +171,38 @@
 				<node id="SpellList"> Warlock Lvl 17 Eldritch Blast
                     <attribute id="Spells" type="LSString" value="Projectile_EldritchBlast4"/>
                     <attribute id="UUID" type="guid" value="52d337bb-9c15-4182-80dd-938621f98910"/>
+                </node>
+		<node id="SpellList"> Ranger Gloomstalker
+                    <attribute id="Spells" type="LSString" value="Shout_DisguiseSelf"/>
+                    <attribute id="UUID" type="guid" value="47f52e6c-bc01-4e9f-8144-deeeeeeeeeee"/>
+                </node>
+		<node id="SpellList"> Druid Wild Companion (Optional Tashas)
+                    <attribute id="Spells" type="LSString" value="Target_FindFamiliar_WildCompanion"/>
+                    <attribute id="UUID" type="guid" value="1105f06e-9e2b-433b-8435-deeeeeeeeeee"/>
+                </node>
+		<node id="SpellList"> Dream Druid
+                    <attribute id="Spells" type="LSString" value="Target_BalmoftheSummerCourt"/>
+                    <attribute id="UUID" type="guid" value="a5bc835c-f09d-4258-9bdc-deeeeeeeeeee"/>
+                </node>
+		<node id="SpellList">
+                    <attribute id="Spells" type="LSString" value="Target_BalmoftheSummerCourt_2"/>
+                    <attribute id="UUID" type="guid" value="c9a59d0f-b5cf-4f9a-8939-deeeeeeeeeee"/>
+                </node>
+		<node id="SpellList"> Wildfire Druid
+                    <attribute id="Spells" type="LSString" value="Zone_BurningHands;Target_CureWounds"/>
+                    <attribute id="UUID" type="guid" value="6792f5e8-8668-425e-b635-deeeeeeeeeee"/>
+                </node>
+		<node id="SpellList">
+                    <attribute id="Spells" type="LSString" value="Target_SummonWildfireSpirit"/>
+                    <attribute id="UUID" type="guid" value="71756ec8-6853-492c-9de7-deeeeeeeeeee"/>
+                </node>
+		<node id="SpellList"> Spores Druid
+                    <attribute id="Spells" type="LSString" value="Target_ChillTouch;Shout_SymbioticEntity"/>
+                    <attribute id="UUID" type="guid" value="cb4b8c24-ebb4-440f-af95-deeeeeeeeeee"/>
+                </node>
+		<node id="SpellList">
+                    <attribute id="Spells" type="LSString" value="Target_Blindness;Projectile_RayOfSickness"/>
+                    <attribute id="UUID" type="guid" value="07e6f6af-9f17-48a8-892c-deeeeeeeeeee"/>
                 </node>
             </children>
         </node>
